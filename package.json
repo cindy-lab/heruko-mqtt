@@ -1,0 +1,25 @@
+{
+  "name": "heruko-mqtt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cindy-lab/heruko-mqtt.git"
+  },
+  "author": "cindy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cindy-lab/heruko-mqtt/issues"
+  },
+  "homepage": "https://github.com/cindy-lab/heruko-mqtt#readme",
+  "engines": {
+    "node": "10.16"
+  },
+  "dependencies": {
+    "package.json": "^2.0.1"
+  }
+}
