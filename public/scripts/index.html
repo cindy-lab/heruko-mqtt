@@ -8,7 +8,7 @@
     <p><img src="https://i.pinimg.com/originals/d4/0c/f5/d40cf5bac1bd5f0bd91679cfbc15f534.jpg" width="150" height="150"/> 
   My MQTT Web App</p>
   <label><b>Broker:</label><input id="broker" value="wss://test.mosquitto.org:8081/mqtt">
-  <button id='connect' onclick="funcConnect()" class="btn btn-success">Connect</button>
+  <button id='connect' onclick="connectFunc()" class="btn btn-success">Connect</button>
   <button id='disconnect' onclick="funcDisconnect()"  class="btn btn-danger" disabled>Disconnect</button>
   <br><br> Status: <input id="status" class="btn btn-default" type="button" value="_______________________"
   disabled><br><br>
@@ -21,9 +21,12 @@
   <div class="sub">
     <label><br>Topic:</label><input id="sub-topic" type="text" placeholder="type topic here">
     <button id='subscribe' onclick="funcSubscribe()" class="btn btn-link">Subscribe</button>
+    <div>
+      <ul id="messages"></ul>
+    </div>
     <button id='unsubscribe' onclick="funcUnsubscribe()" class="btn btn-link">UnSubscribe</button>
   </div> 
 </body>
-<script src="scripts/browserMqtt.js"></script>
+<script src="scripts/browser-mqtt.js"></script>
 <script src="scripts/controller.js"></script>
 </html>
